@@ -11,6 +11,7 @@ A complete guide to understanding the Wordle++ codebase built with C++ and rayli
 I recommend using the **Markdown preview extension** to view this file. 
 Once installed, press `Ctrl + Shift + V` to open the preview.
 
+## 📺 [Watch the Gameplay Video with Audio](gameplay.mp4)
 
 ## Table of Contents
 
