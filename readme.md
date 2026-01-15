@@ -13,6 +13,9 @@ Once installed, press `Ctrl + Shift + V` to open the preview.
 
 ## 📺 [Watch the Gameplay Video with Audio](gameplay.mp4)
 
+![Game Theme Preview](screenshots/menu.png)
+![Game Theme Preview](loosinglayout/menu.png)
+
 ## Table of Contents
 
 1. [Game Overview](#game-overview)
