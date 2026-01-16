@@ -15,16 +15,16 @@ Once installed, press `Ctrl + Shift + V` to open the preview.
 
 <p align="center">
   <a href="https://youtu.be/FUOUAWThReU">
-    <img src="https://img.youtube.com/vi/FUOUAWThReU/maxresdefault.jpg" width="80%" height="auto" />
+    <img src="https://img.youtube.com/vi/FUOUAWThReU/hqdefault.jpg" width="50%" />
   </a>
   <br/>
   <em>Click the screenshot above to watch the demo video</em>
   <br/><br/>
 
-  <img src="game%20screenshots/1.%20menu.PNG" width="80%" height="auto" />
+  <img src="game%20screenshots/1.%20menu.PNG" width="50%" />
   <br/><br/>
 
-  <img src="game%20screenshots/9.%20loosing%20layout.PNG" width="80%" height="auto" />
+  <img src="game%20screenshots/9.%20loosing%20layout.PNG" width="50%" />
 </p>
 
 ## Table of Contents
