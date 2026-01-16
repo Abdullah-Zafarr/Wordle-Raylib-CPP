@@ -13,7 +13,7 @@ Once installed, press `Ctrl + Shift + V` to open the preview.
 
 ### 🎮 Game Preview
 
-## 📺 [Watch the Gameplay Video with Audio](gameplay.mp4)
+[![Project Demo](https://img.youtube.com/vi/FUOUAWThReU/0.jpg)](https://youtu.be/FUOUAWThReU)
 
 ![Main Menu](game%20screenshots/1.%20menu.PNG)
 
