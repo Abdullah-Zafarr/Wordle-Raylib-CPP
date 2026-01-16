@@ -13,15 +13,19 @@ Once installed, press `Ctrl + Shift + V` to open the preview.
 
 ### 🎮 Game Preview
 
-<a href="https://youtu.be/FUOUAWThReU">
-  <img src="https://img.youtube.com/vi/FUOUAWThReU/0.jpg" width="100%" />
-</a>
-<br/>
+<p align="center">
+  <a href="https://youtu.be/FUOUAWThReU">
+    <img src="https://img.youtube.com/vi/FUOUAWThReU/maxresdefault.jpg" width="80%" height="auto" />
+  </a>
+  <br/>
+  <em>Click the screenshot above to watch the demo video</em>
+  <br/><br/>
 
-<img src="game%20screenshots/1.%20menu.PNG" width="100%" />
-<br/>
+  <img src="game%20screenshots/1.%20menu.PNG" width="80%" height="auto" />
+  <br/><br/>
 
-<img src="game%20screenshots/9.%20loosing%20layout.PNG" width="100%" />
+  <img src="game%20screenshots/9.%20loosing%20layout.PNG" width="80%" height="auto" />
+</p>
 
 ## Table of Contents
 
