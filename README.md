@@ -396,7 +396,7 @@ for (int i = 0; i < 5; i++) {
 2. **Add print statements** - Use `printf()` to see values while running
 3. **Change constants** - Try changing `ROWS` to 4 or colors to see effects
 4. **Comment out sections** - See what breaks to understand dependencies
-5. **Read raylib docs** - Visit [raylib.com](https://www.raylib.com/cheatsheet/cheatsheet.html) for the cheatsheet.
+5. **Read raylib docs** - Visit [raylib.com](https://www.raylib.com/cheatsheet/cheatsheet.html) for the cheatsheet..
 
 ---
 
