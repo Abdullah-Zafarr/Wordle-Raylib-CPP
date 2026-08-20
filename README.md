@@ -1,5 +1,5 @@
-# Project Background
-This project was developed by my group and me as our 1st Semester Semester Project for the Programming Fundamentals (PF) course at NASTP NIIT Lahore. 
+﻿# Project Background
+This project was developed by my group and me as our 1st Semester Project for the Programming Fundamentals (PF) course at NASTP NIIT Lahore. 
 
 ---
 
@@ -8,23 +8,19 @@ This project was developed by my group and me as our 1st Semester Semester Proje
 A complete guide to understanding the Wordle++ codebase built with C++ and raylib.
 
 ---
-I recommend using the **Markdown preview extension** to view this file. 
-Once installed, press `Ctrl + Shift + V` to open the preview.
 
 ### 🎮 Game Preview
 
 <p align="center">
+  <img src="assets/gameplay.webp" alt="Wordle++ Gameplay Preview" width="85%" />
+  <br/>
+  <em>⚡ Live Animated Gameplay Preview</em>
+  <br/><br/>
   <a href="https://youtu.be/FUOUAWThReU">
-    <img src="https://img.youtube.com/vi/FUOUAWThReU/hqdefault.jpg" width="50%" />
+    <img src="https://img.youtube.com/vi/FUOUAWThReU/hqdefault.jpg" width="45%" />
   </a>
   <br/>
-  <em>Click the screenshot above to watch the demo video</em>
-  <br/><br/>
-
-  <img src="game%20screenshots/1.%20menu.PNG" width="50%" />
-  <br/><br/>
-
-  <img src="game%20screenshots/9.%20loosing%20layout.PNG" width="50%" />
+  <em>▶️ Click above to watch the full demo on YouTube</em>
 </p>
 
 ## Table of Contents
@@ -51,18 +47,18 @@ Wordle++ is a clone of the popular word-guessing game "Wordle". The rules are si
 3. Use the clues to figure out the word!
 
 ### Features
-- Multiple color themes (Ocean, Sunset, Forest, Cyber, Midnight)
-- Background music with 3 tracks (Chill, Epic, LoFi)
-- Sound effects for typing, winning, and losing
-- Leaderboard to track high scores
-- Easy and Hard difficulty modes
+- 🎨 **Multiple color themes** (Ocean, Sunset, Forest, Cyber, Midnight)
+- 🎵 **Background music** with 3 tracks (Chill, Epic, LoFi)
+- 🔊 **Sound effects** for typing, winning, and losing
+- 🏆 **Leaderboard** to track high scores
+- ⚙️ **Easy and Hard difficulty modes**
+- ✨ **Particle celebration effects**
 
 ---
 
 ## What is Raylib?
 
-**Raylib** is a simple and easy-to-use library for making games in C/C++. It handles:
-
+[Raylib](https://www.raylib.com/) is a simple and easy-to-use library for making games in C/C++. It handles:
 - **Window creation** - Creating the game window
 - **Drawing** - Rendering shapes, text, and images
 - **Input** - Detecting keyboard and mouse input
@@ -76,23 +72,18 @@ Think of raylib as a toolbox that provides ready-made functions like `DrawRectan
 
 ### Prerequisites
 
-1. **Install these tools** on your system:
-   ```bash
-   1.C++ Compiler: Install MinGW (64-bit) via MSYS2. Ensure g++ is added to your system PATH.
+Install these tools on your system:
 
-   2.CMake: Download and install from cmake.org.
-
-   3.Raylib: Download the Windows installer from raylib.com. Important: Install it to C:\raylib as the project configuration is set to look for headers and libraries in C:/raylib/raylib.
-   ```
-
+1. **C++ Compiler**: Install MinGW (64-bit) via MSYS2. Ensure `g++` is added to your system PATH.
+2. **CMake**: Download and install from [cmake.org](https://cmake.org/).
+3. **Raylib**: Download the Windows installer from [raylib.com](https://www.raylib.com/).  
+   *Important*: Install it to `C:\raylib` as the project configuration is set to look for headers and libraries in `C:/raylib/raylib`.
 
 ### Compile the Game
 
-```bash
 Open your terminal (Command Prompt or PowerShell) in the project folder and run these commands:
 
-PowerShell
-
+```powershell
 # 1. Generate the build files
 # Using -G "MinGW Makefiles" ensures CMake uses your MinGW compiler
 cmake -S . -B build -G "MinGW Makefiles"
@@ -103,7 +94,7 @@ cmake --build build --clean-first
 
 ### Run the Game
 
-```bash
+```powershell
 # From the build directory
 cd build
 .\Wordle-Raylib.exe
@@ -113,16 +104,16 @@ cd build
 
 ## Code Structure Overview
 
-The code in `main.cpp` is organized into **7 sections**:
+The code in `main.cpp` is organized into 7 sections:
 
 | Section | Lines | Purpose |
 |---------|-------|---------|
-| 1. Configuration & Constants | ~20 | Game settings that never change (colors, grid size) |
-| 2. Game Screens | ~10 | Enum defining all possible screens (Menu, Game, etc.) |
-| 3. Data Structures | ~15 | Custom types for Tiles and Particles |
-| 4. Global Variables | ~25 | Game state that changes during play |
-| 5. Helper Functions | ~40 | Small utility functions (Txt, Btn, SpawnPart) |
-| 6. File Handling | ~50 | Loading words and saving leaderboard |
+| 1. Config & Constants | ~50 | Game settings, colors, screen dimensions |
+| 2. Enums | ~20 | Screen types (`MENU`, `GAME`, etc.) |
+| 3. Structs | ~30 | `Tile` and `Particle` data structures |
+| 4. Global Variables | ~40 | Game state (current word, score, etc.) |
+| 5. Helper Functions | ~100 | Drawing text, buttons, spawning particles |
+| 6. File I/O | ~60 | Loading words, saving leaderboard |
 | 7. Main Function | ~350 | Game loop, input handling, and rendering |
 
 ---
@@ -253,11 +244,11 @@ The main function follows this structure:
 
 ```
 1. INITIALIZATION
-   ↓
+    
 2. GAME LOOP (repeats 60 times per second)
    ├── UPDATE (process input, update game state)
    └── DRAW (render everything on screen)
-   ↓
+    
 3. CLEANUP (free resources)
 ```
 
@@ -396,8 +387,8 @@ for (int i = 0; i < 5; i++) {
 2. **Add print statements** - Use `printf()` to see values while running
 3. **Change constants** - Try changing `ROWS` to 4 or colors to see effects
 4. **Comment out sections** - See what breaks to understand dependencies
-5. **Read raylib docs** - Visit [raylib.com](https://www.raylib.com/cheatsheet/cheatsheet.html) for the cheatsheet..
+5. **Read raylib docs** - Visit [raylib.com](https://www.raylib.com/cheatsheet/cheatsheet.html) for the cheatsheet.
 
 ---
 
-Happy coding! 🎮
+Happy coding! 🚀
